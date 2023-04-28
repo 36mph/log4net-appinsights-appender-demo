@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
             //System.Diagnostics.Trace.TraceError("If you're seeing this, we did some things");
             
             // Use log4net to log to a file - this will NOT stream to event hub
-            log4net.LogManager.GetLogger("DemoSession").Info("Hello from values controller!");
+            log4net.LogManager.GetLogger("DemoSession").Error("Error message from values controller!");
             return new string[] { "value1", "value2" };
         }
 
